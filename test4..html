@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>test 4</title>
+    <style type="text/css">
+        body {
+            background-color: rgb(43, 39, 39);
+            position: relative;
+        }
+        
+        div {
+            border: 1px solid white;
+        }
+        
+        #main-container {
+            width: calc(800px - 1px * 2);
+            height: calc(600px - 1px * 2);
+            margin-left: calc(50% - 800px / 2);
+            margin-top: calc(50vh - 600px / 2);
+            position: relative;
+            border: none;
+        }
+        
+        header>div {
+            width: calc(800px - 1px * 2);
+            height: calc(19px - 1px * 2);
+        }
+        
+        header>div:nth-child(2) {
+            width: calc(800px - 1px * 2);
+            height: calc(30px - 1px * 2);
+        }
+        
+        header>div:nth-child(2) div {
+            width: calc(500px - 1px * 2);
+            height: calc(14px - 1px * 2);
+            margin-left: calc(50% - 500px / 2);
+            margin-top: 7px;
+        }
+        
+        .whole-group {
+            width: calc(500px - 1px * 2);
+            margin-top: 32px;
+            margin-left: calc(50% - 500px / 2);
+            height: calc(490px - 1px * 2);
+            border: none;
+        }
+        
+        .whole-group>div {
+            height: calc((435px - 1px * 6) / 3);
+            display: flex;
+            flex-direction: row;
+            margin-top: 21px;
+            border: none;
+        }
+        
+        #row-1 div {
+            flex-grow: 1;
+            margin-left: 16px;
+        }
+        
+        #row-1 div:nth-child(1) {
+            flex-grow: 1.4;
+            margin-left: 0px;
+        }
+        
+        #row-2 div {
+            flex-grow: 1;
+            margin-left: 16px;
+        }
+        
+        #row-2 div:nth-child(1) {
+            flex-grow: 3;
+            margin-left: 0px;
+        }
+        
+        #row-2 div:nth-child(2) {
+            flex-grow: 5;
+            margin-left: 16px;
+        }
+        
+        #row-2 div:nth-child(3) {
+            flex-grow: 2;
+            margin-left: 16px;
+        }
+        
+        #row-3 div {
+            flex-grow: 1;
+            margin-left: 16px;
+            height: calc(82px - 1px * 6);
+        }
+        
+        #row-3 div:nth-child(1) {
+            flex-grow: 3;
+            margin-left: 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main-container">
+        <header>
+            <div></div>
+            <div>
+                <div></div>
+            </div>
+        </header>
+        <content>
+            <div class="whole-group">
+                <div id="row-1">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div id="row-2">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div id="row-3">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </content>
+    </div>
+</body>
+
+</html>

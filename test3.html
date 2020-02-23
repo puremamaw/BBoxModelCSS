@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>test 3</title>
+    <style type="text/css">
+        body {
+            background-color: rgb(43, 39, 39);
+            position: relative;
+        }
+        
+        div {
+            border: 1px solid white;
+        }
+        
+        #main-container {
+            width: calc(800px - 1px * 2);
+            height: calc(600px - 1px * 2);
+            margin-left: calc(50% - 800px / 2);
+            margin-top: calc(50vh - 600px / 2);
+            position: relative;
+            border: none;
+        }
+        
+        #first-box {
+            width: calc(800px - 1px * 2);
+            height: calc(150px - 1px * 2);
+            border: none;
+        }
+        
+        #first-box div {
+            width: calc(180px - 1px * 2);
+            height: calc(150px - 1px * 2);
+            float: left;
+        }
+        
+        #first-box div:nth-child(2) {
+            width: calc(180px - 1px * 2);
+            height: calc(150px - 1px * 2);
+            float: left;
+            position: absolute;
+            margin-left: calc(800px - 1px * 2 - 180px);
+        }
+        
+        #second-box {
+            width: calc(800px - 1px * 2);
+            height: calc(64px - 1px * 2);
+            margin-top: 33px;
+        }
+        
+        #third-box {
+            width: calc(800px - 1px * 2);
+            height: calc(330px - 1px * 2);
+            float: left;
+            margin-top: 22px;
+            border: none;
+        }
+        
+        #third-box>div {
+            width: calc((799px - 1px * 6) / 3);
+            height: calc(330px - 1px * 2);
+            margin-left: 59px;
+            float: left;
+        }
+        
+        #third-box>div:nth-child(2) {
+            width: calc(50px - 1px * 2);
+            height: calc(330px - 1px * 2);
+            float: left;
+        }
+        
+        #small-box {
+            width: calc(30px - 1 * 2px);
+            height: calc(30px - 1 * 2px);
+            margin-left: calc(50% - 30px / 2);
+            margin-top: 135px;
+        }
+        
+        .retangular-boxes {
+            border: none;
+        }
+        
+        .retangular-boxes div {
+            width: calc(230px - 1 * 2px);
+            height: calc(40px - 1 * 2px);
+            margin-top: 32px;
+            margin-left: 17px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main-container">
+        <div id="first-box">
+            <div></div>
+            <div></div>
+        </div>
+        <div id="second-box"></div>
+        <div id="third-box">
+            <div class="retangular-boxes">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div>
+                <div id="small-box"></div>
+            </div>
+            <div class="retangular-boxes">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

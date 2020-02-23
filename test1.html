@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>test 1</title>
+    <style type="text/css">
+        body {
+            background-color: rgb(43, 39, 39);
+            position: relative;
+        }
+        
+        div {
+            border: 1px solid white;
+        }
+        
+        #main-container {
+            width: calc(800px - 1px * 2);
+            height: calc(600px - 1px * 2);
+            margin-left: calc(50% - 800px / 2);
+            margin-top: calc(50vh - 600px / 2);
+            border: none;
+        }
+        
+        header {
+            width: calc(800px - 1px * 2);
+            height: calc(77px - 1px * 2);
+        }
+        
+        header div {
+            width: calc(750px - 1px * 2);
+            height: calc(55px - 1px * 2);
+            margin-left: calc(50% - (750px - 1px * 2) / 2);
+            margin-top: calc(6% - (55px - 1px * 2) / 2);
+        }
+        
+        #first-content-box {
+            width: calc(800px - 1px * 2);
+            height: calc(77px - 1px * 2);
+            border: none;
+            margin-top: -17px;
+        }
+        
+        content div div {
+            float: left;
+            margin-left: 24px;
+            margin-top: 9px;
+        }
+        
+        #first-content-box div {
+            width: calc((727px - (1px * 4)) / 2);
+            height: calc((160px - 1px * 4) / 2);
+        }
+        
+        #second-content-box {
+            height: calc(427px - 1px * 2);
+            border: none;
+        }
+        
+        #box4 {
+            height: calc(376px - 1px * 2);
+            width: calc(363px - 1px * 2);
+        }
+        
+        #box4 div {
+            height: calc(348px - 1px * 2);
+            width: calc(55px - 1px * 2);
+            margin-left: 146px;
+            margin-top: 13px;
+        }
+        
+        #box5 {
+            height: calc(245px - 1px * 2);
+            width: calc(363px - 1px * 2);
+        }
+        
+        #box6 {
+            height: calc(107px - 1px * 2);
+            width: calc(363px - 1px * 2);
+            margin-top: 24px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id=main-container>
+        <header>
+            <div></div>
+        </header>
+        <content>
+            <div id=first-content-box>
+                <div></div>
+                <div></div>
+            </div>
+            <div id=second-content-box>
+                <div id="box4">
+                    <div></div>
+                </div>
+                <div id="box5"></div>
+                <div id="box6"></div>
+            </div>
+        </content>
+    </div>
+</body>
+
+</html>

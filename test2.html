@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>test 2</title>
+    <style type="text/css">
+        body {
+            background-color: rgb(43, 39, 39);
+            position: relative;
+        }
+        
+        div {
+            border: 1px solid white;
+        }
+        
+        #main-container {
+            width: calc(800px - 1px * 2);
+            height: calc(600px - 1px * 2);
+            margin-left: calc(50% - 800px / 2);
+            margin-top: calc(50vh - 600px / 2);
+            border: none;
+        }
+        
+        #first-box {
+            width: calc(510px - 1px * 2);
+            height: calc(118px - 1px * 2);
+            margin-left: calc(50% - 510px / 2);
+            margin-top: 17px;
+        }
+        
+        #second-box {
+            width: calc(657px - 1px * 2);
+            height: calc(153px - 1px * 2);
+            margin-left: calc(50% - 657px / 2);
+            margin-top: 26px;
+            display: flex;
+            flex-direction: row;
+        }
+        
+        #second-box div {
+            flex-grow: 2;
+            margin-left: 27px;
+            margin-top: 18px;
+            margin-right: 27px;
+            margin-bottom: 18px;
+        }
+        
+        #second-box div:nth-child(2) {
+            flex-grow: 2;
+            margin-left: 27px;
+            margin-top: 18px;
+            margin-right: 27px;
+            margin-bottom: 18px;
+            width: 124px;
+        }
+        
+        #third-box {
+            width: calc(657px - 1px * 2);
+            height: calc(53px - 1px * 2);
+            margin-left: calc(50% - 657px / 2);
+            margin-top: 13px;
+            display: flex;
+            flex-direction: row;
+        }
+        
+        #third-box div {
+            flex-grow: 2;
+            margin-left: 0;
+            margin-top: 11px;
+            margin-right: 27px;
+            margin-bottom: 11px;
+        }
+        
+        #third-box div:nth-child(1) {
+            flex-grow: 1.2;
+            margin-left: 39px;
+            margin-top: 11px;
+            margin-right: 27px;
+            margin-bottom: 11px;
+        }
+        
+        #fourth-box {
+            height: calc(219px - 1px * 2);
+            width: calc(800px - 1px * 2);
+            border: none;
+        }
+        
+        #fourth-box div {
+            width: 244px;
+            height: 200px;
+            margin-left: 104px;
+            margin-top: 19px;
+            float: left;
+        }
+    </style>
+</head>
+
+<body>
+    <div id=main-container>
+        <div id="first-box"></div>
+        <div id="second-box">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div id="third-box">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div id="fourth-box">
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+</body>
+
+</html>
