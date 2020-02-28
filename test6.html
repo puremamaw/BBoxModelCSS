@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>test 6</title>
+    <style type="text/css">
+        body {
+            background-color: rgb(43, 39, 39);
+            position: relative;
+        }
+        
+        div {
+            border: 1px solid white;
+        }
+        
+        #main-container {
+            width: calc(707px - 1px * 2);
+            height: calc(536px - 1px * 2);
+            margin-left: calc(50% - 800px / 2);
+            margin-top: calc(50vh - 600px / 2);
+            position: relative;
+            display: flex;
+            border: none;
+        }
+        
+        #main-container>div:first-child {
+            flex-grow: 2.2;
+        }
+        
+        #main-container>div:last-child {
+            flex-grow: 8;
+            display: flex;
+            flex-direction: column;
+            border: none;
+        }
+        
+        #box-container>div:first-child {
+            flex-grow: 0.8;
+            border: none;
+        }
+        
+        #box-container>div:last-child {
+            flex-grow: 3;
+            display: flex;
+            border: none;
+            padding-left: calc(47% - 392px / 2);
+            padding-bottom: calc(14% - 1px * 2);
+        }
+        
+        #small-box {
+            width: calc(491px - 1px * 2);
+            height: calc(28px - 1px * 2);
+            margin-top: calc(33px / 2);
+            margin-left: calc(100% - 491px);
+        }
+        
+        #box-container2 div {
+            flex-grow: 1;
+            margin-right: calc(5% - 1px * 2);
+            display: flex;
+            flex-direction: column;
+        }
+        
+        #box-container2>div {
+            border: none;
+        }
+        
+        #box-container2>div:nth-child(2) {
+            border: 1px solid white;
+        }
+        
+        #column1>div:first-child {
+            flex-grow: 4.5;
+            margin-right: 0px;
+            margin-bottom: 10%;
+        }
+        
+        #column1>div:last-child {
+            flex-grow: 3;
+        }
+        
+        #box-container2 div:last-child {
+            margin-right: 0px;
+        }
+        
+        #column3 div:first-child {
+            flex-grow: 1.7;
+            margin-right: 0px;
+            margin-bottom: 10%;
+        }
+        
+        #column3 div:last-child {
+            flex-grow: 5;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main-container">
+        <div></div>
+        <div id="box-container">
+            <div>
+                <div id="small-box"></div>
+            </div>
+            <div id="box-container2">
+                <div id="column1">
+                    <div></div>
+                    <div></div>
+                </div>
+                <div></div>
+                <div id="column3">
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

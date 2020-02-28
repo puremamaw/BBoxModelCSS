@@ -7,6 +7,8 @@
         body {
             background-color: rgb(43, 39, 39);
             position: relative;
+            margin: 0px;
+            padding: 0px;
         }
         
         div {
@@ -26,33 +28,32 @@
             width: calc(800px - 1px * 2);
             height: calc(150px - 1px * 2);
             border: none;
+            float: left;
         }
         
         #first-box div {
             width: calc(180px - 1px * 2);
-            height: calc(150px - 1px * 2);
+            height: calc(148px - 1px * 2);
             float: left;
         }
         
-        #first-box div:nth-child(2) {
-            width: calc(180px - 1px * 2);
-            height: calc(150px - 1px * 2);
+        #first-box div:last-child {
             float: left;
-            position: absolute;
-            margin-left: calc(800px - 1px * 2 - 180px);
+            margin-left: calc(794px - (180px * 2 - 4px));
         }
         
         #second-box {
-            width: calc(800px - 1px * 2);
+            width: calc(800px - 1px * 4);
             height: calc(64px - 1px * 2);
             margin-top: 33px;
+            float: left;
         }
         
         #third-box {
             width: calc(800px - 1px * 2);
             height: calc(330px - 1px * 2);
             float: left;
-            margin-top: 22px;
+            margin-top: 25px;
             border: none;
         }
         
@@ -65,7 +66,7 @@
         
         #third-box>div:nth-child(2) {
             width: calc(50px - 1px * 2);
-            height: calc(330px - 1px * 2);
+            height: calc(330px - 1px * 4);
             float: left;
         }
         
